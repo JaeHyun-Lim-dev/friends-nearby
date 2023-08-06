@@ -1,17 +1,9 @@
 <template>
   <div>some header</div>
-  <RegisterVue />
+  <router-view />
 </template>
 
-<script>
-// import HelloWorld from "./components/HelloWorld.vue";
-import RegisterVue from "./pages/Register.vue";
-
-export default {
-  name: "App",
-  components: { RegisterVue },
-};
-</script>
+<script></script>
 
 <style>
 #app {
