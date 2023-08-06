@@ -1,21 +1,21 @@
 <template>
   <div class="fullpage">
     <form v-on:submit.prevent="submitForm">
-      <li>
+      <div>
         <label for="id">id: </label
         ><input v-model="inputId" placeholder="아이디를 입력해주세요." />
-      </li>
-      <li>
+      </div>
+      <div>
         <label for="id">pw: </label
         ><input v-model="inputPw1" placeholder="비밀번호를 입력해주세요." />
-      </li>
-      <li>
+      </div>
+      <div>
         <label for="id">확인: </label
         ><input
           v-model="inputPw2"
           placeholder="비밀번호를 한번 더 입력해주세요."
         />
-      </li>
+      </div>
       <button type="submit">Submit</button>
     </form>
   </div>
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: "RegisterPage",
+  name: "CreateAccountPage",
   props: {},
   data: function () {
     return {
