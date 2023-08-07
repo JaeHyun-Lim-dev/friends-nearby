@@ -1,5 +1,5 @@
 <template>
-  <div>some header</div>
+  <div class="header">리브똑똑</div>
   <router-view />
 </template>
 
