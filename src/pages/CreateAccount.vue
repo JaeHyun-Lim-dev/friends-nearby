@@ -16,7 +16,7 @@
           placeholder="비밀번호를 한번 더 입력해주세요."
         />
       </div>
-      <button type="submit">Submit</button>
+      <button class="app-button" type="submit">Submit</button>
     </form>
   </div>
 </template>

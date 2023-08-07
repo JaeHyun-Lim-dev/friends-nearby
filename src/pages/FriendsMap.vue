@@ -1,7 +1,7 @@
 <template>
   <div class="fullpage">
     <div>주변의 유저들을 이 화면에 표시합니다.</div>
-    <button @click="goBack">뒤로가기</button>
+    <button class="app-button" @click="goBack">뒤로가기</button>
   </div>
 </template>
 
