@@ -12,6 +12,6 @@
       "*": ["src/*"]
     }
   },
-  "include": ["src/**/*.vue", "src/**/*.ts", "src/utils/message.js"],
+  "include": ["src/**/*.vue", "src/**/*.ts", "src/**/*.js"],
   "exclude": ["node_modules", ".vscode"]
 }
