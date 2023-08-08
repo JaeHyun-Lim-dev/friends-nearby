@@ -16,6 +16,8 @@ export const message = {
       // 네이티브 연결이 성공적이지 못할 때
       throw new Error();
     }
-    window.webkit?.messageHandlers?.bnkBridge.postMessage(reqCmdJsonString);
+    window.webkit?.messageHandlers?.messageFromWebView.postMessage(
+      reqCmdJsonString
+    );
   },
 };
