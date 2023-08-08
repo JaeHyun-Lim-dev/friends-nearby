@@ -5,23 +5,23 @@ import FriendsMap from "../pages/FriendsMap.vue";
 import LoginPage from "../pages/Login.vue";
 
 const routes = [
-  { path: "/friends-nearby/login", name: "Login", component: LoginPage },
+  { path: "/liiv-arround/login", name: "Login", component: LoginPage },
   {
-    path: "/friends-nearby/create-account",
+    path: "/liiv-arround/create-account",
     name: "CreateAccount",
     component: CreateAccountPage,
   },
   {
-    path: "/friends-nearby/check-bluetooth",
+    path: "/liiv-arround/check-bluetooth",
     name: "CheckBluetooth",
     component: CheckBluetooth,
   },
   {
-    path: "/friends-nearby/friends-map",
+    path: "/liiv-arround/friends-map",
     name: "FriendsMap",
     component: FriendsMap,
   },
-  { path: "/friends-nearby/", redirect: "/friends-nearby/login" },
+  { path: "/liiv-arround/", redirect: "/liiv-arround/login" },
 ];
 
 export const router = createRouter({
