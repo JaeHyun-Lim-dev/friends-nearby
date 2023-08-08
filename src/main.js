@@ -1,10 +1,10 @@
+import firebase from "firebase/compat/app";
+import "firebase/compat/database";
 import { createApp } from "vue";
 import App from "./App.vue";
 import "./css/global.css";
 import router from "./routers/index.js";
-// import message from "./utils/message";
-import firebase from "firebase/compat/app";
-import "firebase/compat/database";
+import { message } from "./utils/message";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -24,5 +24,10 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 export { database };
+window.sendMessage = message;
 
-createApp(App).use(router).mount("#app");
+const app = createApp(App);
+app.use(router);
+app.use(message);
+window.nativeMessage = message;
+app.mount("#app");
