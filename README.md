@@ -1,4 +1,4 @@
-# friends-nearby
+# liiv-arround
 
 ## Project setup
 
