@@ -6,7 +6,11 @@
     </div>
     <div class="input-label">
       <label for="id">pw</label
-      ><input v-model="inputPw" placeholder="비밀번호를 입력해주세요." />
+      ><input
+        type="password"
+        v-model="inputPw"
+        placeholder="비밀번호를 입력해주세요."
+      />
     </div>
     <div class="col-container">
       <button class="app-button" @click="submitForm">로그인</button>
@@ -28,6 +32,7 @@ export default {
   },
   methods: {
     async submitForm() {
+      if (!this.inputId) return;
       await firebase
         .database()
         .ref("/users/" + this.inputId)
